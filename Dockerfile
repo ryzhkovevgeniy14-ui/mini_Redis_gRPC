@@ -18,4 +18,4 @@ USER appuser
 
 EXPOSE 8000
 
-CMD ["python", "-m", "mini_redis_grpc"]
+CMD ["python", "-m", "mini_redis_grpc.main"]
