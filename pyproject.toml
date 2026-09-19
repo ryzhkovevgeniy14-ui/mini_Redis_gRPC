@@ -12,6 +12,12 @@ dependencies = [
     "grpcio-tools>=1.84.0",
 ]
 
+[tool.ruff]
+exclude = [
+    "src/mini_redis_grpc/kvstore_pb2.py",
+    "src/mini_redis_grpc/kvstore_pb2_grpc.py",
+]
+
 [project.scripts]
 mini-redis-grpc = "mini_redis_grpc:main"
 
