@@ -1,0 +1,26 @@
+[project]
+name = "mini-redis-grpc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Red-14", email = "red-14@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "grpcio>=1.84.0",
+    "grpcio-tools>=1.84.0",
+]
+
+[project.scripts]
+mini-redis-grpc = "mini_redis_grpc:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.8",
+]
